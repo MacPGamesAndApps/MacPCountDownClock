@@ -5,7 +5,7 @@
              Loaded="OnPageLoaded"
              NavigatedTo="OnPageLoaded">
 
-    <ScrollView Orientation="Horizontal">
+    <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -24,7 +24,6 @@
                 SemanticProperties.HeadingLevel="Level2"
                 FontSize="26"
                 FontFamily="DIGITALDREAMFAT"
-                FontAttributes="Bold"
                 HorizontalOptions="Center" />
 
             <Button

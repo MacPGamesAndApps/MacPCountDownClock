@@ -36,7 +36,8 @@ namespace MacPCountDownClock.Helpers
             }
             catch (Exception ex)
             {
-
+                countDownData.CounterFor = "Countdown not yet configured";
+                countDownData.CountDownDateTime = countDownDateTime;
             }
             return countDownData;
         }
