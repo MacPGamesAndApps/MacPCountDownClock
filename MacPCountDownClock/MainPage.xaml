@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MacPCountDownClock.MainPage" 
+             Loaded="OnPageLoaded"
+             NavigatedTo="OnPageLoaded">
+
+    <ScrollView Orientation="Horizontal">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                x:Name="CounterForLbl"
+                Text=""
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="CountdownLbl"
+                Text=""
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="26"
+                FontFamily="DIGITALDREAMFAT"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="GoToSettingsBtn"
+                Text="Go to Settings"
+                SemanticProperties.Hint="Opens the Settings page."
+                Clicked="OnSettingsClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

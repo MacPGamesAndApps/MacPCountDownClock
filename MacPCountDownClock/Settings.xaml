@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MacPCountDownClock.Settings"
+             Title="Settings">
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout
+            x:Name="SettingsLyt"
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label 
+                Text="Countdown To Event:"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="CounterForTxt"
+                Text="" 
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                Placeholder="Please, enter the name of the event here."
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text="Event Date:"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                HorizontalOptions="Center" />
+
+            <DatePicker 
+                x:Name="EventDtp"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <TimePicker
+                x:Name="EventTmp"
+                FontSize="16" 
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="SaveDateTimeBtn"
+                Text="Save Settings"
+                SemanticProperties.Hint="Saves the Countdown Data."
+                Clicked="OnSaveClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="ReturnToMainBtn"
+                Text="Return to Main Page"
+                SemanticProperties.Hint="Returns to the Countdown page."
+                Clicked="OnReturnClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
