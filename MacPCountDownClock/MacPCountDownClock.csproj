@@ -56,9 +56,9 @@
 	  <ApplicationId>com.macpgames.macpcountdownclock</ApplicationId>
 	  <AndroidPackageFormat>apk</AndroidPackageFormat>
 	  <AndroidKeyStore>True</AndroidKeyStore>
-	  <AndroidSigningStorePass>Jessica19681208</AndroidSigningStorePass>
-	  <AndroidSigningKeyAlias>macpgames</AndroidSigningKeyAlias>
-	  <AndroidSigningKeyPass>Jessica19681208</AndroidSigningKeyPass>
+	  <AndroidSigningStorePass></AndroidSigningStorePass>
+	  <AndroidSigningKeyAlias></AndroidSigningKeyAlias>
+	  <AndroidSigningKeyPass></AndroidSigningKeyPass>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
